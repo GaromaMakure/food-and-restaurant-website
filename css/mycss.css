@@ -126,3 +126,27 @@ p {
   margin: auto;
 }
 /* header Design */
+.navigation-wrap {
+  position: fixed;
+  width: 100;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 0.3s linear;
+}
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.nav-link {
+  font-size: 0.9;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
