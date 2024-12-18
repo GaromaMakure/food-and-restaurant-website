@@ -147,6 +147,32 @@ p {
   font-size: 0.9;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--secondary-color);
+  color: var(--white-color);
   letter-spacing: 1px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+.navigation-wrap .main-btn {
+  padding: 0.3125rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+/* change navbar styling on scroll */
+.navigation-wrap.scroll-on {
+  position: fixed;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+}
+.navigation-wrap.scroll-on .nav-link {
+  color: var(--black-color);
+}
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link:active {
+  color: var(--primary-color);
 }
