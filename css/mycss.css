@@ -128,7 +128,7 @@ p {
 /* header Design */
 .navigation-wrap {
   position: fixed;
-  width: 100;
+  width: 100%;
   left: 0;
   z-index: 1000;
   -webkit-transition: all 0.3s ease-out;
@@ -138,6 +138,7 @@ p {
   padding: 0 0.625rem;
   transition: all 0.3s linear;
 }
+
 .navbar-toggler:focus {
   outline: unset;
   border: unset;
@@ -175,4 +176,14 @@ p {
 .navigation-wrap.scroll-on .nav-link:hover,
 .navigation-wrap.scroll-on .nav-link:active {
   color: var(--primary-color);
+}
+/* top banner design */
+.top-banner {
+  width: 100%;
+  background: url("../images/bg/bg-1.jpg");
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+.top-banner p {
+  color: var(--white-color);
 }
