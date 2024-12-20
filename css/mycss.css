@@ -243,3 +243,25 @@ p {
 .card:hover .cat-title a {
   color: var(--primary-color);
 }
+/* about section design */
+.about-section {
+  background: var(--black-color);
+}
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+}
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+/* food type section design */
+.food-type {
+  padding-top: 3.25rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
