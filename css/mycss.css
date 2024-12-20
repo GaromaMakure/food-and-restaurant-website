@@ -194,18 +194,22 @@ p {
   border: none;
   position: relative;
   overflow: hidden; /* Ensure that hover effects are contained within the card */
+  border-radius: 50%; /* Makes the card oval-shaped */
 }
 
 .our-menu .link-category-product {
   position: relative;
   display: block;
   z-index: 1;
+  overflow: hidden; /* Ensures the image fits the oval shape */
+  border-radius: 50%; /* Ensures the link shape is oval */
 }
 
 .our-menu .link-category-product img {
   width: 100%;
   height: auto;
   transition: transform 0.4s ease; /* Smooth zoom effect on hover */
+  border-radius: 50%; /* Ensures the image fits the oval shape */
 }
 
 .our-menu .link-category-product::before {
@@ -218,6 +222,7 @@ p {
   background: var(--primary-color);
   opacity: 0; /* Initially transparent */
   z-index: 0;
+  border-radius: 50%; /* Ensures the hover effect is oval */
   transition: opacity 0.4s ease; /* Smooth fade effect */
 }
 
